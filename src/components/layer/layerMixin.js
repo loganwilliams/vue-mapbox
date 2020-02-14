@@ -128,7 +128,6 @@ export default {
   },
 
   beforeDestroy() {
-    console.log(this.map.loaded());
     if (this.map) {
       try {
         this.map.removeLayer(this.layerId);
@@ -148,8 +147,6 @@ export default {
           });
         }
       }
-    } else {
-      console.log("map not loaded, layer not removed");
     }
   },
 
