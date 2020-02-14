@@ -129,7 +129,7 @@ export default {
 
   beforeDestroy() {
     console.log(this.map.loaded());
-    if (this.map && this.map.loaded()) {
+    if (this.map) {
       try {
         this.map.removeLayer(this.layerId);
       } catch (err) {
